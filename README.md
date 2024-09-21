@@ -35,25 +35,51 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+I learned how to style Unordered lists, Ordered lists & Tables with CSS. Also learned to build a reponsive layout that works different on desktop and mobile screens by using the CSS Media Query
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
+
 ```css
-.proud-of-this-css {
-  color: papayawhip;
-}
+    li {
+      font-family: Outfit;
+      padding: 6px 16px;
+      margin-left: -16px;
+      list-style-position: outside;
+      color: hsl(30, 10%, 34%);
+    }
+
+    li::marker {
+      color: hsl(14, 45%, 36%);
+    }
 ```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
+
+```css
+    @media screen and (max-width:720px) {
+
+      .card {
+        padding: 0;
+        border-radius: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        max-width: 100%;
+      }
+
+      .coverimage {
+        border-radius: 0;
+        max-width: 100%;
+      }
+
+      .recipe {
+        max-width: 100%;
+        margin: 40px;   
+      }
+
+    }
 ```
 
 ### Useful resources
 
-- [CSS Flexbox](https://www.w3schools.com/css/css3_flexbox_container.asp) - This is a good article that helped me understand CSS Flexbox and and it's potential.
+- [CSS Lists](https://www.w3schools.com/css/css_list.asp) - This is a good article that helped me understand CSS Lists styling.
+- [CSS Media Query](https://www.w3schools.com/css/css_rwd_mediaqueries.asp) - This is a good article that helped me understand CSS Media Query and responsive layouts.
 
 ## Author
 
